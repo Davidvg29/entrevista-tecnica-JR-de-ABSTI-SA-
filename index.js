@@ -51,7 +51,7 @@ let cities = []
 const cards = document.querySelector(".cards")
 buttonSearch.addEventListener("click", ()=>{
     city = input.value
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&&units=metric&APPID=${{ secrets.API_KEY }}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&&units=metric&APPID=ed61896ce920ba513d59b6d211df16e7`)
   .then(response => {
     if (!response.ok) {
       console.log("ocurrio un error a obtener el ok de la api");
